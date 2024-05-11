@@ -101,7 +101,8 @@
 <li><strong>解决类加载的冲突和重复加载的问题</strong>。</li>
 <li><strong>沙箱安全机制：防止Java核心API库被随意篡改。通俗点说，当Java核心类库中的类（比如：java.lang.String）的类名与用户自定义类的类名相同有冲突时，Java不会加载用户自定义的类。</strong></li>
 </ul>
-<h1 id="java中双亲委派机制如何实现的"><a href="#java中双亲委派机制如何实现的" class="headerlink" title="java中双亲委派机制如何实现的"></a>java中双亲委派机制如何实现的</h1><p><img src="/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A8%E7%A4%BA%E6%84%8F%E5%9B%BE.png"></p>
+<h1 id="java中双亲委派机制如何实现的"><a href="#java中双亲委派机制如何实现的" class="headerlink" title="java中双亲委派机制如何实现的"></a>java中双亲委派机制如何实现的</h1><img src="/2024/05/09/java%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%A8%A1%E5%BC%8F/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E5%99%A8%E7%A4%BA%E6%84%8F%E5%9B%BE.png" class="" title="This is an example image">
+
 <p>在java中的类加载器模型图如上，分为三层。</p>
 <p>BootstrapClassLoader: 启动类加载器，最上层类加载器为本地方法，主要加载 jre&#x2F;lib&#x2F;rt.jar  路径内类文件</p>
 <p>ExtClassLoader：扩展类加载器 主要加载 jre&#x2F;lib&#x2F;ext&#x2F;*.jar</p>
